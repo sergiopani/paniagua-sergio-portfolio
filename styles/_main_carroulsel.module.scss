@@ -1,0 +1,55 @@
+.main_carrousel {
+    width: 100%;
+    height: 100%;
+    line-height: 0.5;
+
+    .main_carrousel__container {
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 1rem;
+
+
+        .main__carrousel__image {
+
+            object-fit: cover;
+            //border redondos
+            border-radius: 0.5rem;
+
+
+        }
+
+        .main_carrousel__title {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .main_carrousel__description {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .main_carrousel__subdescripcion {
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+
+        .main_carousel__iconos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+
+        .main_carousel__iconos__image {
+            width: 2rem;
+            height: 2rem;
+            margin: 0.5rem;
+        }
+    }
+
+}
