@@ -10,4 +10,7 @@ export * from './varios/WorkProgress';
 export * from './footer/Footer';
 export * from './loading/Loading';
 export * from './varios/GithubProyects';
+// export * from './imagesComp/LazyLoadImages';
+
+
 

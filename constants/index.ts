@@ -129,7 +129,7 @@ export const links: Link[] = [
 	},
 	{
 		name: 'Images',
-		href: '/about'
+		href: '/lazy-load'
 	},
 	{
 		name: 'Contact',

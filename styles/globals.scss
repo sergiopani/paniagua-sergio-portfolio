@@ -31,14 +31,9 @@ body {
     display: grid;
     scroll-behavior: smooth;
 
-    // @media (max-width: 1600px) {
-    //     padding: 0 35%;
-    // }
 
-    // @media (max-width: 1000px) {
-    //     padding: 0 0;
-    // }
-    //hacer que cuando la linea se divide en dos, no se ponga una encima de la otra
+    animation: opacity 1s ease-in-out;
+
 
     //Mobile first
     grid-template-columns: 0fr 1fr 0fr;
@@ -63,4 +58,14 @@ body {
     ". main ."
     ". footer .";
 
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
