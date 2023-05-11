@@ -1,0 +1,102 @@
+@import '../variables/vars';
+
+.work__objetivos {
+    width: 100%;
+    display: flex;
+
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .work__objetivo {
+        border-radius: 0.5rem;
+        padding: 2rem;
+        --tw-text-opacity: 1;
+        // border: 0.2px solid rgb(136 136 136/var(--tw-text-opacity));
+        width: calc(50% - 3rem);
+        --tw-shadow: 0 8px 30px rgb(0, 0, 0, 0.12);
+        --tw-shadow-colored: 0 8px 30px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+        display: flex;
+
+
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .work__objetivo__nombre {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+
+    }
+
+    .work__objetivo__descripcion {
+        font-size: 14px;
+        color: #999;
+        margin-bottom: 10px;
+    }
+
+    .link__objetivo {
+        @extend .work__objetivo;
+        color: white;
+        //quitar stylo al link
+        text-decoration: none;
+
+        transition: transform 0.5s ease-in-out;
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: 2fr;
+        grid-template-areas:
+            "titulo icono"
+            "descripcion icono";
+
+
+        .work__objetivo__nombre {
+            grid-area: titulo;
+            padding-left: 1rem;
+        }
+
+        .work__objetivo__descripcion {
+            grid-area: descripcion;
+            padding-left: 1rem;
+        }
+
+
+
+        .work__repo__nombre {
+            grid-area: titulo;
+            padding-left: 1rem;
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .work__repo__descripcion {
+            grid-area: descripcion;
+            padding-left: 1rem;
+            margin: 0;
+        }
+
+
+
+        .icono {
+            grid-area: icono;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        &:hover {
+            transform: scale(1.05);
+
+
+        }
+    }
+}

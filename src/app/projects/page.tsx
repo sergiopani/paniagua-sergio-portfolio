@@ -1,8 +1,14 @@
+import GithubProyects from "../../../components/ui/varios/GithubProyects";
 
-const ProjectsPage = () => {
+
+
+
+const page = () => {
     return (
-        <div>Projects</div>
+        <>
+            <GithubProyects />
+        </>
     );
 };
 
-export default ProjectsPage;
+export default page;

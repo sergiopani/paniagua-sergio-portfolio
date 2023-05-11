@@ -1,0 +1,82 @@
+@import "../variables/vars";
+
+.header {
+    grid-area: header;
+
+    position: sticky;
+    //backdrop blur
+
+    top: 0;
+
+    z-index: 1000;
+    //aplicar un filtrado de blur
+    backdrop-filter: blur(10px);
+    background: rgb(17 16 16/var(--tw-bg-opacity));
+
+    .active {
+
+        font-weight: 700;
+
+
+        background: #262626;
+        border-radius: 4px;
+        filter: blur(90%);
+        transition: all 0.2s ease-in-out;
+
+    }
+
+    background-color: $color-primary;
+    color: $color-secondary;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+    .header__container {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        //Quitar el estilo al link
+        text-decoration: none;
+        color: $color-secondary;
+    }
+
+    .header__description {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .header__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+    }
+
+    .header__item {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .header__link {
+        text-decoration: none;
+        color: $color-secondary;
+        padding: 7px;
+
+        &:hover {
+            color: darken($color-secondary, 10%);
+        }
+
+    }
+
+}

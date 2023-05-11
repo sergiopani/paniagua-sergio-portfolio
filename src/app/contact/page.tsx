@@ -1,9 +1,21 @@
+import { FC } from "react";
+import { Header, Main, Footer, MainTopProjects } from "../../../components/ui";
+import { footerItems, proyectosData, usuarioData } from "../../../constants";
+import { ContactForm } from "../../../components/ui/forms/ContactForm";
 
-const ContactPage = () => {
+const AboutPage: FC = () => {
+    const { nombre, descripcion, } = usuarioData;
     return (
-        <div>Contact</div>
+        <>
+
+            <Main>
+                <MainTopProjects proyectos={proyectosData} />
+                <ContactForm />
+            </Main>
+
+        </>
     );
 };
 
 
-export default ContactPage;
+export default AboutPage;

@@ -1,0 +1,85 @@
+@import '../variables/vars.scss';
+
+.contact__form {
+    width: 100%;
+    margin-top: 2rem;
+
+    fieldset {
+        position: relative;
+        width: 100%;
+        padding: 0 2em;
+        margin: 0 auto;
+
+    }
+
+    .fieldset {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 2rem 0;
+
+    }
+
+    .__input {
+        width: 90%;
+        padding: 1rem;
+        border: 1px solid $color-secondary;
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: $color-primary;
+        transition: all .2s;
+
+        &:focus {
+            outline: none;
+            color: white;
+            border-color: $color-primary;
+        }
+    }
+
+    .__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: .5rem;
+        display: block;
+    }
+
+    .__input::placeholder {
+        color: $color-secondary;
+    }
+
+    .__submit {
+        cursor: pointer;
+        background-color: $color-primary;
+        border: 1px solid $color-secondary;
+        border-radius: 2px;
+        color: #fff;
+        font-size: inherit;
+        padding: 1.5rem 4rem;
+        transition: all .2s;
+
+        &:hover {
+            background-color: darken($color-primary, 10%);
+        }
+    }
+
+    .__textArea {
+        width: 90%;
+        padding: 1rem;
+        border: 1px solid $color-secondary;
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: $color-primary;
+        transition: all .2s;
+
+        &:focus {
+            outline: none;
+            border-color: $color-primary;
+        }
+    }
+}
