@@ -6,7 +6,7 @@ interface Transcription {
 }
 
 export const transcripcionVideo: Transcription = {
-    video: '/videos/wwa.mp4',
+    video: '/videos/next-tutorial.mp4',
     transcriptionText: 'Hola esta es la transcripcion'
 };
 

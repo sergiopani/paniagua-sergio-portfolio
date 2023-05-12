@@ -30,7 +30,7 @@ export const LazyLoadImages: FC = () => {
             {
                 images.length === 0 && <Loading />
             }
-            <div className={style.imagenes}>
+            <section className={style.imagenes}>
                 {
                     images.map((image: any) => {
                         return (
@@ -46,7 +46,7 @@ export const LazyLoadImages: FC = () => {
                         );
                     })
                 }
-            </div>
+            </section>
         </>
     );
 };

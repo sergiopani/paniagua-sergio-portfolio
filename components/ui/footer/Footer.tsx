@@ -9,7 +9,7 @@ interface Props {
 }
 export const Footer: FC<Props> = ({ footerItems }) => {
     return (
-        <footer className={style.footer__container} >
+        <footer role="contentInfo" className={style.footer__container} >
 
             <div className={style.footer__container__items}>
                 {

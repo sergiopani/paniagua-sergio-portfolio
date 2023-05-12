@@ -1,3 +1,5 @@
+@import "../variables/vars";
+
 .video__container {
     width: 100%;
     height: 450px;
@@ -30,10 +32,13 @@
     align-items: center;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    background-color: #1a1a1a;
+    color: $secondary-color;
+    border-radius: 5px;
 
     &:hover {
         background-color: #1a1a1a;
-        color: white;
+        color: $secondary-color;
     }
 
 }

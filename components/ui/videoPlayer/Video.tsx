@@ -17,7 +17,7 @@ const VideoPlayer: FC<Props> = ({ videoSrc, transcript }) => {
     };
 
     const handleSubtitleChange = (event: any) => {
-        console.log(event.target.value);
+
 
         if (event.target.value == -1) {
             [...videoRef.current.textTracks].forEach((track: any) => {
@@ -42,6 +42,7 @@ const VideoPlayer: FC<Props> = ({ videoSrc, transcript }) => {
 
     return (
         <>
+            <h1 className={style.titulo__defecto}>Como funciona next?</h1>
             <div className={style.video__container}>
                 <video
                     controls
@@ -52,7 +53,7 @@ const VideoPlayer: FC<Props> = ({ videoSrc, transcript }) => {
                     poster="/icons/nextjs.svg"
                     autoPlay
                     data-able-player
-                    data-skin="2020"
+                    data-skin="2023"
                 >
                     <source type="video/mp4" src={videoSrc} />
                     <source type="video/webm" src={videoSrc} />
@@ -62,7 +63,7 @@ const VideoPlayer: FC<Props> = ({ videoSrc, transcript }) => {
                 </video>
             </div>
             <div className="subtitle-controls" style={{ marginTop: '2rem' }}>
-                <label htmlFor="subtitle-select" className={style.titulo__defecto} style={{ marginBottom: '2rem' }}>Subtitles:</label>
+                <label htmlFor="subtitle-select" className={style.titulo__defecto} style={{ marginBottom: '5rem' }}>Subtitles:</label>
                 <select onChange={handleSubtitleChange} className={style.language__selector__single}>
                     <option value="-1">Off</option>
 

@@ -26,7 +26,7 @@ export const Layout: FC<Props> = ({ children, title, description }) => {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
             </Head>
-            <main>
+            <main role="main">
                 {children}
             </main>
         </>

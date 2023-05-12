@@ -1,8 +1,30 @@
 $map-of-colors: (
     primary: #111010,
-    secondary: #ffffff
+    secondary: #ffffff,
+    paragraph: #888888,
 );
 
+$opacities: (
+    text-opacity: 1
+);
 
-$color-primary: #111010;
-$color-secondary: #ffffff;
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+);
+
+$primary-color: map-get($map-of-colors, primary);
+$secondary-color: map-get($map-of-colors, secondary);
+
+$paragraph-color: map-get($map-of-colors, paragraph);
+
+$opacity: map-get($opacities, text-opacity);
+
+
+$col-gap: 1rem;
+$row-gap: 1rem;
+$line-w: 0.10rem;
+$inlineP: 1.5rem;
+$dateH: 3rem;

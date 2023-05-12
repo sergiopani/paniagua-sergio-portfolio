@@ -4,7 +4,7 @@ import global from 'styles/_global_classes.module.scss';
 
 export const ContactForm: FC = () => {
     return (
-        <form className={style.contact__form}>
+        <form role="input" className={style.contact__form}>
             <fieldset>
                 {/* <legend className={global.titulo__defecto}>Formulario de contacto</legend> */}
                 <div className={style.fieldset}>

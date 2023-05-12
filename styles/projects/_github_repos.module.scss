@@ -25,20 +25,20 @@
 
     height: 30px;
     border-radius: 0.5rem;
-    border: 1px solid $color-secondary;
+    border: 1px solid $secondary-color;
     padding: 0.5rem;
     margin-bottom: 2rem;
     font-size: 1rem;
 
-    color: $color-secondary;
+    color: $secondary-color;
     outline: none;
     transition: all 0.5s ease-in-out;
-    background: $color-primary;
+    background: $primary-color;
     margin-top: 3rem;
 
     &:focus {
-        border: 1px solid $color-secondary;
-        color: $color-secondary
+        border: 1px solid $secondary-color;
+        color: $secondary-color
     }
 }
 
@@ -92,7 +92,7 @@
     .work__objetivo {
         border-radius: 0.5rem;
         padding: 0.5rem;
-        border: 1px solid $color-secondary;
+        border: 1px solid $secondary-color;
         width: 100%;
         height: 156px !important;
 
@@ -103,6 +103,7 @@
         align-items: flex-start;
         justify-content: center;
         margin-bottom: 2rem;
+
     }
 
     .work__objetivo__nombre {

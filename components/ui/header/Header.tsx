@@ -22,33 +22,36 @@ export const Header: FC<Props> = ({ user, description, navLinks }) => {
 
     return (
         <>
-            <header className={style.header}>
+            <header role="banner" className={style.header}>
                 <div className={style.header__container}>
                     <Link href="/" className={style.header__title}>{user + '();'}</Link>
                     <button className={style.movile__button} onClick={handleClick}>
 
 
                     </button>
-                    <ul className={style.header__list}>
+                    <nav role="navigation">
+                        <ul className={style.header__list}>
 
-                        {navLinks.map((link) => {
+                            {navLinks.map((link) => {
 
-                            const isActive = pathname === link.href;
-                            return (
-                                <li key={link.href} className={style.header__item}>
-                                    <Link
-                                        className={`${style.header__link} ${isActive ? style.active : ''}`}
-                                        href={link.href}
-                                        key={link.name}
-                                    >
-                                        {link.name}
-                                    </Link>
-                                </li>
-                            );
-                        })}
+                                const isActive = pathname === link.href;
+                                return (
+                                    <li key={link.href} className={style.header__item}>
+                                        <Link
+                                            className={`${style.header__link} ${isActive ? style.active : ''}`}
+                                            href={link.href}
+                                            key={link.name}
+                                            prefetch={false}
 
-                    </ul>
+                                        >
+                                            {link.name}
+                                        </Link>
+                                    </li>
+                                );
+                            })}
 
+                        </ul>
+                    </nav>
                 </div>
 
             </header >

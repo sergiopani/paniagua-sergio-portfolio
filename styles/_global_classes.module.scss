@@ -1,8 +1,10 @@
+@import "./variables/vars";
+
 .titulo__defecto {
     text-align: start;
     font-weight: 700;
     --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity));
+    color: rgb(255 255 255/$opacity);
     font-size: 1.5rem;
     line-height: 2rem;
 
@@ -10,14 +12,14 @@
 
 .paragrafo__defecto {
     --tw-text-opacity: 1;
-    color: rgb(136 136 136/var(--tw-text-opacity));
+    color: rgb(136 136 136/$opacity);
     font-size: 1rem;
     line-height: 1.5rem;
 }
 
 .super__title {
     --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity));
+    color: rgb(255 255 255/$opacity);
 
     font-size: 3rem;
     line-height: 1;
@@ -26,7 +28,7 @@
 
 .super__title__secundario {
     --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity));
+    color: rgb(255 255 255/$opacity);
     font-size: 1rem;
     line-height: 1;
     margin-top: 0px;

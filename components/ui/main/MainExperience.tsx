@@ -14,7 +14,7 @@ export const MainExperience: FC<Props> = ({ experiencia_arr }) => {
         <>
             <h1 className={global.titulo__defecto} style={{ marginBottom: '3rem', textAlign: 'center' }}>Experiencia</h1>
             <section>
-                <ul className={style.ul}>
+                <ul lang="en" className={style.ul}>
                     {
                         experiencia_arr.map(({ id, nombre, descripcion }, index) => (
                             <li key={id} className={style.experiencia__caja}>

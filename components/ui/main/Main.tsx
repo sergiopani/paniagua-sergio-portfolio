@@ -15,7 +15,7 @@ export const Main: FC<Props> = ({ children }) => {
         setAnimar(true);
     }, []);
     return (
-        <main className={`${style.main__container}  ${animar ? 'animar' : ''}`}>
+        <main role="main" className={`${style.main__container}  ${animar ? 'animar' : ''}`}>
             {children}
         </main>
     );

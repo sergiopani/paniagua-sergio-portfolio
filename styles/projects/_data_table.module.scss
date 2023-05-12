@@ -1,20 +1,49 @@
+@import "../variables/vars";
+
 .table {
-    border: 1px solid #ddd;
+
+    width: 100%;
+
+    .table__caption {
+        color: $secondary-color;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .table__description {
+        color: $paragraph-color;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 
     th {
-        color: white;
-        border: 1px solid #ddd;
+        color: $secondary-color;
+        border-bottom: 1px solid $secondary-color;
 
     }
 
     tr {
-        border-top: 1px solid #ddd;
+        border-top: 1px solid $secondary-color;
 
         height: 50px;
 
         td {
 
-            color: #999;
+            color: $paragraph-color;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+        }
+
+
+        &:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.1);
+
         }
     }
 }
