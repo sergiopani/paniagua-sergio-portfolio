@@ -102,6 +102,7 @@ export const MainCarrousel: FC<Props> = ({ nombre, imageUrl, descripcion, subdes
                                 alt="php"
                                 width={24}
                                 height={24}
+
                                 className={style.main_carousel__iconos__image} />
                         </div>
                     </div>

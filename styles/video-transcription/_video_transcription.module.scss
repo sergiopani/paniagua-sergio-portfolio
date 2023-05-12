@@ -1,0 +1,39 @@
+.video__container {
+    width: 100%;
+    height: 450px;
+
+    .video__single {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+.titulo__defecto {
+    text-align: start;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+}
+
+
+
+.language__selector__single {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #1a1a1a;
+        color: white;
+    }
+
+}

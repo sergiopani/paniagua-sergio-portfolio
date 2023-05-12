@@ -136,6 +136,10 @@ export const links: Link[] = [
 		href: '/transcription-video'
 	},
 	{
+		name: 'Table',
+		href: '/data-table'
+	},
+	{
 		name: 'Contact',
 		href: '/contact'
 	}

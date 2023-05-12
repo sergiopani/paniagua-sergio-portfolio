@@ -1,7 +1,7 @@
 'use client';
 
 import Link from "next/link";
-import { FC } from "react";
+import { FC, useRef } from "react";
 import { usePathname } from 'next/navigation';
 import style from 'styles/header/_header.module.scss';
 import { Link as LinkType } from '../../../types';
@@ -13,32 +13,73 @@ interface Props {
 
 export const Header: FC<Props> = ({ user, description, navLinks }) => {
     const pathname = usePathname();
+
+    const movileHeader = useRef<HTMLHeadElement>(null);
+
+    const handleClick = () => {
+        movileHeader.current?.classList.toggle(style.hidden);
+    };
+
     return (
-        <header className={style.header}>
-            <div className={style.header__container}>
-                <Link href="/" className={style.header__title}>{user + '();'}</Link>
-                <ul className={style.header__list}>
+        <>
+            <header className={style.header}>
+                <div className={style.header__container}>
+                    <Link href="/" className={style.header__title}>{user + '();'}</Link>
+                    <button className={style.movile__button} onClick={handleClick}>
 
-                    {navLinks.map((link) => {
 
-                        const isActive = pathname === link.href;
-                        return (
-                            <li key={link.href} className={style.header__item}>
-                                <Link
-                                    className={`${style.header__link} ${isActive ? style.active : ''}`}
-                                    href={link.href}
-                                    key={link.name}
-                                >
-                                    {link.name}
-                                </Link>
-                            </li>
-                        );
-                    })}
+                    </button>
+                    <ul className={style.header__list}>
 
-                </ul>
+                        {navLinks.map((link) => {
 
-            </div>
+                            const isActive = pathname === link.href;
+                            return (
+                                <li key={link.href} className={style.header__item}>
+                                    <Link
+                                        className={`${style.header__link} ${isActive ? style.active : ''}`}
+                                        href={link.href}
+                                        key={link.name}
+                                    >
+                                        {link.name}
+                                    </Link>
+                                </li>
+                            );
+                        })}
 
-        </header >
+                    </ul>
+
+                </div>
+
+            </header >
+
+            <header className={`${style.hidden} ${style.header__movile}`} ref={movileHeader}>
+                <div className={style.header__container}>
+
+                    <ul className={style.header__list}>
+
+                        {navLinks.map((link) => {
+
+                            const isActive = pathname === link.href;
+                            return (
+                                <li key={link.href} className={style.header__item}>
+                                    <Link
+                                        className={`${style.header__link} ${isActive ? style.active : ''}`}
+                                        href={link.href}
+                                        key={link.name}
+                                    >
+                                        {link.name}
+                                    </Link>
+                                </li>
+                            );
+                        })}
+
+                    </ul>
+
+                </div>
+
+
+            </header>
+        </>
     );
 };

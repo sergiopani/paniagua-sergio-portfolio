@@ -1,0 +1,20 @@
+.table {
+    border: 1px solid #ddd;
+
+    th {
+        color: white;
+        border: 1px solid #ddd;
+
+    }
+
+    tr {
+        border-top: 1px solid #ddd;
+
+        height: 50px;
+
+        td {
+
+            color: #999;
+        }
+    }
+}
