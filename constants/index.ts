@@ -132,6 +132,10 @@ export const links: Link[] = [
 		href: '/lazy-load'
 	},
 	{
+		name: 'Video',
+		href: '/transcription-video'
+	},
+	{
 		name: 'Contact',
 		href: '/contact'
 	}

@@ -63,12 +63,18 @@
             align-items: start;
             justify-content: space-between;
 
+            //aplicar keyframe de cambio
+
+
         }
 
         .main_carousel__iconos__image {
-            width: 2rem;
-            height: 2rem;
+            // animation: onMounted 1s ease-in-out;
+            width: 24px;
+            height: 24px;
             margin: 0.5rem;
+            animation: width 1s ease-in-out;
+
         }
     }
 
@@ -84,4 +90,31 @@
 .super__title {
     font-size: 3rem;
     line-height: 1;
+}
+
+@keyframes onMounted {
+    from {
+
+        transform: scaleX(0);
+        opacity: 0;
+
+    }
+
+    to {
+        transform: scaleX(1);
+        opacity: 1;
+
+    }
+}
+
+@keyframes width {
+    from {
+        width: 0rem;
+        scale: 0;
+    }
+
+    to {
+        width: 24px;
+        scale: 1;
+    }
 }

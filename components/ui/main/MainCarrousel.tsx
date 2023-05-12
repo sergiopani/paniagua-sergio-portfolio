@@ -45,41 +45,63 @@ export const MainCarrousel: FC<Props> = ({ nombre, imageUrl, descripcion, subdes
                         <div className={style.main_carousel__iconos__container}>
                             <Image
 
-                                src="/icons/nextjs.svg"
+                                src="/icons-fav/next.svg"
                                 alt="nextjs"
-                                width={50}
-                                height={50}
+                                width={24}
+                                height={24}
+                                style={{ marginLeft: '0px' }}
                                 className={style.main_carousel__iconos__image} />
 
                             <Image
 
-                                src="/icons/reactjs.svg"
+                                src="/icons-fav/react.svg"
                                 alt="reactjs"
-                                width={50}
-                                height={50}
+                                width={24}
+                                height={24}
                                 className={style.main_carousel__iconos__image} />
 
                             <Image
 
                                 src="/icons/vuejs.svg"
                                 alt="vuejs"
-                                width={50}
-                                height={50}
+                                width={24}
+                                height={24}
                                 className={style.main_carousel__iconos__image} />
 
                             <Image
 
                                 src="/icons/python.svg"
                                 alt="python"
-                                width={50}
-                                height={50}
+                                width={24}
+                                height={24}
                                 className={style.main_carousel__iconos__image} />
                             <Image
 
                                 src="/icons/php.svg"
                                 alt="php"
-                                width={50}
-                                height={50}
+                                width={24}
+                                height={24}
+                                className={style.main_carousel__iconos__image} />
+                            <Image
+
+                                src="/icons-fav/node.svg"
+                                alt="php"
+                                width={24}
+                                height={24}
+                                className={style.main_carousel__iconos__image} />
+                            <Image
+
+                                src="/icons-fav/figma.svg"
+                                alt="php"
+                                width={24}
+                                height={24}
+                                className={style.main_carousel__iconos__image} />
+                            <Image
+
+                                src="/icons-fav/tailwind.svg"
+                                alt="php"
+                                width={24}
+                                height={24}
                                 className={style.main_carousel__iconos__image} />
                         </div>
                     </div>
